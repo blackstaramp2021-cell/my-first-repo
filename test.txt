@@ -1,2 +1,3 @@
 Hello Git
 Hello Git - updated
+This line was edited in VSCode.
