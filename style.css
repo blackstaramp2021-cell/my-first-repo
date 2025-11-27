@@ -1,8 +1,26 @@
 /* ==========================
+   変数の定義（カスタムプロパティ）
+========================== */
+:root {
+    --color-header: #333;
+    --color-header-text: #fff;
+    --color-navbar: #333;
+    --color-navbar-text: #fff;
+    --color-navbar-hover: #ddd;
+    --color-footer-bg: #f2f2f2;
+    --color-footer-text: #555;
+    --color-section-bg: #f9f9f9;
+    --font-main: 'Arial', sans-serif;
+    --font-size-main: 18px;
+    --padding-main: 20px;
+    --border-radius: 8px;
+}
+
+/* ==========================
    共通スタイル
 ========================== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
 }
@@ -11,9 +29,9 @@ body {
    ヘッダー
 ========================== */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: var(--color-header);
+    color: var(--color-header-text);
+    padding: var(--padding-main);
     text-align: center;
 }
 
@@ -21,7 +39,7 @@ header {
    ナビゲーション
 ========================== */
 .navbar {
-    background-color: #333;
+    background-color: var(--color-navbar);
     padding: 10px;
 }
 
@@ -34,36 +52,36 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: var(--color-navbar-text);
     text-decoration: none;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    color: var(--color-navbar-hover);
 }
 
 /* ==========================
    メインコンテンツ
 ========================== */
 main {
-    padding: 20px;
-    font-size: 18px;
+    padding: var(--padding-main);
+    font-size: var(--font-size-main);
 }
 
 main section {
     margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    padding: var(--padding-main);
+    background-color: var(--color-section-bg);
+    border-radius: var(--border-radius);
 }
 
 /* ==========================
    フッター
 ========================== */
 footer {
-    background-color: #f2f2f2;
-    color: #555;
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
     padding: 10px;
     text-align: center;
 }
