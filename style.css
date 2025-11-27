@@ -40,3 +40,9 @@ footer {
   text-decoration: underline;
 }
 
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
