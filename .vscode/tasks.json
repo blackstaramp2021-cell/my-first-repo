@@ -5,6 +5,12 @@
       "label": "Commit and Push",
       "type": "shell",
       "command": "git add . && git commit -m \"Auto commit\" && git push",
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+          "args": ["-c"]
+        }
+      },
       "group": {
         "kind": "build",
         "isDefault": true
@@ -13,3 +19,4 @@
     }
   ]
 }
+
