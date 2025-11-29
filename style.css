@@ -2,9 +2,9 @@
    変数の定義（カスタムプロパティ）
 ========================== */
 :root {
-    --color-header: #333;
+    --color-header: #222;
     --color-header-text: #fff;
-    --color-navbar: #333;
+    --color-navbar: #222;
     --color-navbar-text: #fff;
     --color-navbar-hover: #ddd;
     --color-footer-bg: #f2f2f2;
@@ -92,7 +92,10 @@ footer {
     border-radius: 10px;
     max-width: 800px;
     margin: 40px auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+main section:not(.about-section) {
+    padding: var(--padding-main);
 }
 
 /* 画像とテキストの横並びレイアウト */
@@ -130,5 +133,9 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+#skills ul {
+    padding-left: 20px;
+    line-height: 1.8;
 }
 
