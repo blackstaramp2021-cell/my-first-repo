@@ -86,6 +86,26 @@
             });
         });
     </script>
+    <script>
+    // 背景色を変えるボタン
+    const colorBtn = document.getElementById('color-btn');
+    const colorText = document.getElementById('color-text');
+
+    colorBtn.addEventListener('click', () => {
+        // ランダムな色を生成して背景に適用
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        colorText.style.backgroundColor = randomColor;
+    });
+
+    // メッセージ表示ボタン
+    const messageBtn = document.getElementById('message-btn');
+    const messageText = document.getElementById('message-text');
+
+    messageBtn.addEventListener('click', () => {
+        messageText.textContent = "こんにちは！JavaScriptが動きました！";
+    });
+</script>
+
 </body>
 </html>
 
