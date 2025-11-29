@@ -60,19 +60,22 @@
         </section>
     </main>
 
-    <footer>
+        <footer>
         <p>© 2025 Satoru</p>
     </footer>
-<script>
-window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('.fade-section');
-    sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 50) {
-            section.classList.add('visible');
-        }
-    });
-});
-</script>
+
+    <!-- スクロールフェード用スクリプト -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.fade-section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if(rect.top < window.innerHeight - 50) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
