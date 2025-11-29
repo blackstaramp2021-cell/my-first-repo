@@ -183,3 +183,27 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+#js-practice {
+    padding: 20px;
+    background-color: #d0f0ff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#js-practice button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0da2e7;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#js-practice button:hover {
+    transform: scale(1.05);
+}
