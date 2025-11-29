@@ -85,3 +85,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
+.profile-image {
+    width: 200px;       /* 好きなサイズに変更できる */
+    border-radius: 50%; /* 丸くする */
+    display: block;
+    margin: 20px auto;  /* 中央に配置 */
+}
