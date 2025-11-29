@@ -66,4 +66,14 @@
         <p>© 2025 Satoru</p>
     </footer>
 </body>
+<script>
+window.addEventListener('scroll', function() {
+    const about = document.querySelector('.about-section');
+    const rect = about.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50) {
+        about.classList.add('visible');
+    }
+});
+</script>
+
 </html>
