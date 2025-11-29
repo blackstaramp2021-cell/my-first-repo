@@ -149,4 +149,16 @@ main section:not(.about-section) {
     color: var(--color-navbar-hover);
     transform: scale(1.1); /* 少し拡大 */
 }
+/* 最初は透明 */
+.about-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* .visible クラスを付けると表示 */
+.about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
