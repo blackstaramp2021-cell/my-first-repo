@@ -22,24 +22,23 @@
     <main>
         <!-- About セクション -->
         <section id="about" class="about-section">
-        <h2>About</h2>
+            <h2>About</h2>
 
-    <div class="profile-container">
-        <img src="figure_gray_zone.png" alt="プロフィール画像" class="profile-image">
+            <div class="profile-container">
+                <img src="figure_gray_zone.png" alt="プロフィール画像" class="profile-image">
 
-        <div class="profile-text">
-            <h3>プロフィール</h3>
-            <p>
-                はじめまして、Satoruです。  
-                Web制作の学習をスタートしたばかりですが、少しずつ自分のサイトを作っています。  
-                このページは HTML と CSS の練習を兼ねて作成しています。
-            </p>
-        </div>
-    </div>
-</section>
+                <div class="profile-text">
+                    <h3>プロフィール</h3>
+                    <p>
+                        はじめまして、Satoruです。  
+                        Web制作の学習をスタートしたばかりですが、少しずつ自分のサイトを作っています。  
+                        このページは HTML と CSS の練習を兼ねて作成しています。
+                    </p>
+                </div>
+            </div>
+        </section>
 
-
-        <!-- Skills セクション（新規追加） -->
+        <!-- Skills セクション -->
         <section id="skills">
             <h2>Skills</h2>
             <ul>
@@ -54,8 +53,7 @@
             <h2>Contact</h2>
             <p>お問い合わせはこちらに書きます。</p>
             <p>
-                GitHub 公式サイトはこちら：
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn">
                     GitHubへ
                 </a>
             </p>
@@ -65,15 +63,16 @@
     <footer>
         <p>© 2025 Satoru</p>
     </footer>
-</body>
-<script>
-window.addEventListener('scroll', function() {
-    const about = document.querySelector('.about-section');
-    const rect = about.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 50) {
-        about.classList.add('visible');
-    }
-});
-</script>
 
+    <!-- スクロールフェード用スクリプト -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const about = document.querySelector('.about-section');
+            const rect = about.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 50) {
+                about.classList.add('visible');
+            }
+        });
+    </script>
+</body>
 </html>
