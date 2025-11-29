@@ -21,7 +21,7 @@
 
     <main>
         <!-- About セクション -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section fade-section">
             <h2>About</h2>
 
             <div class="profile-container">
@@ -39,7 +39,7 @@
         </section>
 
         <!-- Skills セクション -->
-        <section id="skills">
+        <section id="skills" class="fade-section">
             <h2>Skills</h2>
             <ul>
                 <li>HTML の基礎</li>
@@ -49,7 +49,7 @@
         </section>
 
         <!-- Contact セクション -->
-        <section id="contact">
+        <section id="contact" class="fade-section">
             <h2>Contact</h2>
             <p>お問い合わせはこちらに書きます。</p>
             <p>
@@ -63,16 +63,16 @@
     <footer>
         <p>© 2025 Satoru</p>
     </footer>
-
-    <!-- スクロールフェード用スクリプト -->
-    <script>
-        window.addEventListener('scroll', function() {
-            const about = document.querySelector('.about-section');
-            const rect = about.getBoundingClientRect();
-            if(rect.top < window.innerHeight - 50) {
-                about.classList.add('visible');
-            }
-        });
-    </script>
 </body>
+<script>
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.fade-section');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50) {
+            section.classList.add('visible');
+        }
+    });
+});
+</script>
 </html>
