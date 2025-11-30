@@ -1,10 +1,16 @@
-// クリック回数を保存する変数
 let clickCount = 0;
 
-// プロフィール画像がクリックされたら実行される関数
 function profileClicked() {
-  clickCount++; // カウントを1増やす
-  // HTML上の表示を書き換える
-  document.getElementById("clickDisplay").textContent =
-    "クリック回数：" + clickCount;
+    clickCount++;
+
+    const display = document.getElementById("clickDisplay");
+    display.textContent = "クリック回数：" + clickCount;
+
+    // アニメーション用のクラスを付与
+    display.classList.add("clicked");
+
+    // 0.2秒後にクラスを外す（scale を元に戻す）
+    setTimeout(() => {
+        display.classList.remove("clicked");
+    }, 200);
 }
