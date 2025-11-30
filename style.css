@@ -218,5 +218,13 @@ footer {
 /* クリック時に一瞬大きくなるアニメーション */
 .clicked {
   transform: scale(1.3);
-  color: #ff6600;
+}
+.about-section {
+  padding: 40px 20px;
+  background: #ace5f3; /* 初期色 */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* 色変化を滑らかに */
 }
