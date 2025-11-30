@@ -1,7 +1,8 @@
-let userName = "Satoru";
-let count = 0;
+// クリック回数を保存する変数
+let clickCount = 0;
 
-function showInfo() {
-    count = count + 1;
-    alert(userName + " さんが " + count + " 回クリックしました");
+// プロフィール画像がクリックされたら実行される関数
+function profileClicked() {
+  clickCount++; // カウントを1増やす
+  alert("プロフィール画像が " + clickCount + " 回クリックされました！");
 }
