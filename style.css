@@ -79,10 +79,6 @@ main section {
   border-radius: var(--border-radius);
 }
 
-main section:not(.about-section) {
-  padding: var(--padding-main);
-}
-
 /* ==========================
    フッター
 ========================== */
