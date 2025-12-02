@@ -101,9 +101,11 @@ footer {
   max-width: 800px;
   margin: 40px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* フェードイン用 */
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease, background-color 0.3s ease;
 }
 
 .about-section.visible {
@@ -219,15 +221,7 @@ footer {
 .clicked {
   transform: scale(1.3);
 }
-.about-section {
-  padding: 40px 20px;
-  background: #ace5f3; /* 初期色 */
-  border-radius: 10px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease; /* 色変化を滑らかに */
-}
+
 /* Skill Cards */
 .skills-container {
   max-width: 900px;
@@ -299,4 +293,8 @@ footer {
 
 .can-do-list li {
   margin-bottom: 6px;
+}
+.navbar a.active {
+  color: yellow;
+  text-decoration: underline;
 }
